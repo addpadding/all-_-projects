@@ -1,0 +1,99 @@
+/* 003 */
+.slider_container {
+    position: relative;
+    /* border: 11px solid #f00; */
+    width: 700px;
+    height: 400px;
+
+    margin: 50px auto 30px;
+}
+
+.img_slider {
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 700px;
+    border-radius: 11px;
+}
+
+.slider_container p {
+    z-index: 55;
+    position: absolute;
+
+    top: 22px;
+    left: 26px;
+    color: #FFF;
+    background-color: #5b94be;
+    font-size: 20px;
+    padding: 6px 8px;
+    border-radius: 5px;
+}
+
+/* 003 */
+.num_container {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 004 */
+#pre,
+#next {
+    font-size: 22px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #2e95e3;
+    cursor: pointer;
+}
+
+#pre:hover,
+#next:hover {
+    background-color: #2b9cf3;
+}
+
+#pre:active {
+    transform: translateX(-4px);
+}
+
+#next:active {
+    transform: translateX(4px);
+}
+
+/* !js */
+#pre:disabled,
+#next:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.num_container button {
+    all: unset;
+    color: #FFF;
+}
+
+
+/* 004 */
+.numbers button {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-left: 7px;
+    background-color: #f3f3f3;
+    color: #222;
+    cursor: pointer;
+}
+
+
+.numbers button.active_num,
+.numbers button:hover {
+    background-color: #2e95e3 !important;
+    color: #FFF !important;
+}
+
+.numbers button:active {
+    padding: 6px 11px;
+}

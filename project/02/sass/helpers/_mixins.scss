@@ -1,0 +1,38 @@
+@mixin list-reset {
+  padding: 0%;
+  margin: 0%;
+  list-style: none;
+}
+
+@mixin circle($dimensions) {
+  border-radius: 50%;
+  width: $dimensions;
+  height: $dimensions;
+}
+
+@mixin centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============ 017 ====================*/
+
+@mixin overlay($color, $opacity) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color, $opacity);
+}
+
+@mixin keyF($anim-name) {
+  @-webkit-keyframes #{$anim-name} {
+    @content;
+  }
+
+  @keyframes #{$anim-name} {
+    @content;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SE3_08_slider</title>
+
+    <!-- main CSS -->
+    <link rel="stylesheet" href="css/main_SE3_01.css" />
+</head>
+<body id="body">
+
+<!-- ==================== 01 header -->
+<header id="header" class="myheader">
+
+    <!-- #01 - 11 -->
+    <h1 id="website">
+        <a style="color: #fff; text-decoration: none;" href="index_SE3_01.html">Courses4Arab</a>
+    </h1>
+
+    <!-- #01 - 11 -->
+    <nav>
+        <!-- #01 - 11 == 10 -->
+        <ul class="parent">
+
+            <!-- #01 - 11 == 10 == 100 -->
+            <li>
+                <a href="https://courses4arab.com/#available-courses">
+                    ALL Courses
+                </a>
+            </li>
+
+            <!-- #01 - 11 == 10 == 200 -->
+            <li><a href="SE3_08_slider.html"> slider </a></li>
+            <!-- #01 - 11 == 10 == 300 -->
+            <li id="darkMode" class="mode">change mode</li>
+            <!-- #01 - 11 == 10 == 400 -->
+            <li id="changeColor"> change color
+
+                <!-- #01 - 11 == 10 == 400 == 1.000 -->
+                <ul id="hiddenul" style="display: none;">
+                    <li id="headerbg">Header BG</li>
+                    <li id="titlebg">Title BG</li>
+                    <li id="titlecolor">Title color</li>
+                    <li id="sectionbg">section BG</li>
+                </ul>
+
+            </li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<main id="main">
+
+<section>
+
+    <h1>
+        8 - Slider || Slidwshow
+    </h1>
+
+    <div id="id_slider_container" class="slider_container">  
+
+        <!-- <img style="z-index: 55;" src="img-08/01.jpg" class="img_slider" alt="">
+        <img src="img-08/02.jpg" class="img_slider" alt="">
+        <img src="img-08/03.jpeg" class="img_slider" alt="">
+        <img src="img-08/04.jpg" class="img_slider" alt="">
+        <img src="img-08/05.jpg" class="img_slider"      alt=""> -->
+
+    <!-- <p> slide #1 of 5 </p> -->
+
+    </div>
+
+    <div class="num_container">
+
+        <button id="pre"> &lt; pre</button>
+
+        <div class="numbers">
+            <button class="myNumber active_num">1</button>
+            <button class="myNumber">2</button>
+            <button class="myNumber">3</button>
+            <button class="myNumber">4</button>
+            <button class="myNumber">5</button>
+        </div>
+
+        <button id="next">next  &gt; </button>
+
+    </div>
+
+</section>
+
+</main>
+
+<!-- ==================== -->
+<script src="js/SE3_01_main.js"></script>
+<script src="js/SE3_08_slider.js"></script>
+</body>
+</html>

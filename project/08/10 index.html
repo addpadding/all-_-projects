@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+        <p v-show="name">Name: {{ name }} </p>
+        <p v-if="age">Age: {{ age }} </p>
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+                name: '',
+                age:'',
+            },
+        })
+    </script>
+</body>
+</html>

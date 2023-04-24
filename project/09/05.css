@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", "sans-serif";
+  font-size: 18px;
+}
+
+.container {
+  text-align: center;
+}
+/* ============================== */
+
+.container .grad-box {
+  padding: 40px;
+  border-bottom: ipx solid likfccc;
+  color: li#fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+.container form {
+  margin: 20px auto;
+  width: 900px;
+}
+.container form .form-group {
+  display: inline-block;
+}
+.container form .form-group label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.container form input {
+  padding: 10px 15px;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+}
+
+.container form .separator {
+  margin: 0 20px;
+}
+.container .result,
+.container .syntax {
+  margin: 20px auto;
+  background-color: rgba(3, 169, 244, 0.35);
+  padding: 20px;
+  width: 865px;
+  text-align: left;
+}
+.container .result span,
+.container .syntax span {
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+}

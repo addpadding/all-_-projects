@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 120px;
+    height: 100vh;
+    background-color: crimson;
+    color: #fff;
+}
+
+.container p {
+    padding: 5px;
+}
+
+.container p:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+button {
+    background-color: crimson;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+#close {
+    position: absolute;
+    left: 125px;
+}
+
+.hide {
+    display: none;
+}

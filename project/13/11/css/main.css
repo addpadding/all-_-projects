@@ -1,0 +1,132 @@
+* {
+    outline: 2px solid red;
+}
+
+:root {
+    --main-color: #10cab7;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4.5fr 2fr 1.5fr 1.5fr 3fr 1.5fr 4fr 3fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". header-logo . header-menu ."
+        "landing landing landing landing landing"
+        ". features-01 features-02 features-03 ."
+        ". services-1 services-02 services-05 ."
+        ". services-03 services-04 services-05 ."
+        ". portfolio-img-01 portfolio-img-02 portfolio-img-03 ."
+        ". portfolio-text-01 portfolio-text-02 portfolio-text-03 ."
+        ". about-img-01 about-text-02 about-text-02 ."
+        ". contact contact contact ."
+        ". footer footer footer .";
+}
+
+.header-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . ."
+        ". . ."
+        ". . .";
+    grid-area: header-logo;
+}
+
+.header-menu {
+    grid-area: header-menu;
+}
+
+.landing {
+    grid-area: landing;
+    /* background-image: url(../images/landing.jpg); */
+}
+
+.features-01 {
+    grid-area: features-01;
+}
+
+.features-02 {
+    grid-area: features-02;
+}
+
+.features-03 {
+    grid-area: features-03;
+}
+
+.features .feat i {
+    color: var(--main-color);
+}
+
+.services-1 {
+    grid-area: services-1;
+}
+
+.services-02 {
+    grid-area: services-02;
+}
+
+.services-03 {
+    grid-area: services-03;
+}
+
+.services-04 {
+    grid-area: services-04;
+}
+
+.services-05 {
+    grid-area: services-05;
+}
+
+.services_icon i {
+    color: var(--main-color);
+}
+
+.portfolio-img-01 {
+    grid-area: portfolio-img-01;
+}
+
+.portfolio-img-02 {
+    grid-area: portfolio-img-02;
+}
+
+.portfolio-img-03 {
+    grid-area: portfolio-img-03;
+}
+
+.portfolio-text-01 {
+    grid-area: portfolio-text-01;
+}
+
+.portfolio-text-02 {
+    grid-area: portfolio-text-02;
+}
+
+.portfolio-text-03 {
+    grid-area: portfolio-text-03;
+}
+
+.about-img-01 {
+    grid-area: about-img-01;
+}
+
+.about-text-02 {
+    grid-area: about-text-02;
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.footer {
+    grid-area: footer;
+}

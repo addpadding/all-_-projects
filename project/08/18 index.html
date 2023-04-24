@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> 18  -->
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+        <label>write your Username:</label>
+        <input type="text" v-model="username">
+        <p> {{ ValidiUsername }} </p>
+        <p> {{ age }} </p>
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+                username: '',
+                age: 36,
+            },
+            methods: {
+                // ValidiUsername: function () {
+                //     console.log('Run');
+                //     if (!this.username) {
+                //         return 'username cant be Empty';
+                //     } else if (this.username.length < 8) {
+                //         return 'username is to short';
+                //     } else if (! isNaN(this.username)) {
+                //         return 'username cant be numbers only';
+                //     } else {
+                //         return 'hello' + this.username + 'is good';
+                //     }
+                // },
+            },
+            computed: {
+                ValidiUsername: function () {
+                    console.log('Run');
+                    if (!this.username) {
+                        return 'username cant be Empty';
+                    } else if (this.username.length < 8) {
+                        return 'username is to short';
+                    } else if (! isNaN(this.username)) {
+                        return 'username cant be numbers only';
+                    } else {
+                        return 'hello' + this.username + 'is good';
+                    }
+                },
+            },
+        })
+    </script>
+</body>
+</html>

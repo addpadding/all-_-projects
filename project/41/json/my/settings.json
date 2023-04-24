@@ -1,0 +1,297 @@
+{
+  "editor.renderWhitespace": "all",
+  "editor.formatOnSave": true,
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "bracketPairColorizer.depreciation-notice": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.autoSave": "onFocusChange",
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "editor.formatOnPaste": true,
+  "workbench.iconTheme": "material-icon-theme",
+  // "editor.guides.bracketPairs": true,
+  // "editor.bracketPairColorization.enabled": true,
+  "window.menuBarVisibility": "compact",
+  "workbench.colorTheme": "Ayu Mirage Bordered",
+  // اضافة الكومنتات
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#98C379",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "001",
+      "color": "#0db14c",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "002",
+      "color": "#d9245f",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "003",
+      "color": "#00aeff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "004",
+      "color": "#ff8800",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "005",
+      "color": "#9c27b0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "006",
+      "color": "#ff0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "007",
+      "color": "#0db14c",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "008",
+      "color": "#d9245f",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "009",
+      "color": "#00aeff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "010",
+      "color": "#ff8800",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "hover",
+      "color": "#e84393",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "js",
+      "color": "#ffeb3b",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "media",
+      "color": "#fff",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "after",
+      "color": "#9e9e9e",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "before",
+      "color": "#9e9e9e",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "text-01",
+      "color": "#ff5722",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#transparent",
+      "bold": true,
+      "italic": false
+    },
+  ],
+  // اضافة الوان التاج
+  "rainbowTags.colors": [
+    // 001
+    "#0db14c",
+    // 002
+    "#d9245f",
+    // 003
+    "#00aeff",
+    // 004
+    "#ff8800",
+    // 005
+    "#9c27b0",
+    // 006
+    "#ff0",
+  ],
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "ayu-mirage-plus.addTheme": [
+    {
+      "name": "mee",
+      "colors": {
+        "themeColor": "#f00",
+        "foreground": "#000000",
+        "border": "#bbffaa34",
+        "highlight": "#8cf173"
+      }
+    }
+  ],
+  "ayu-mirage-plus.resetTheme": [
+    {
+      "name": "loool",
+      "colors": {
+        "themeColor": "#f00",
+        "foreground": "#000000",
+        "border": "#bbffaa34",
+        "highlight": "#8cf173"
+      }
+    }
+  ],
+  // اضافة المسافات
+  "indentRainbow.colors": [
+    // 001
+    "#0db14c23",
+    // 002
+    "#d924601e",
+    // 003
+    "#00aeff28",
+    // 004
+    "#ff880023",
+    // 005
+    "#9b27b02d",
+    // 006
+    "#ffff0027",
+    // "rgba(255,255,64,0.07)",
+    // "rgba(127,255,127,0.07)",
+    // "rgba(255,127,255,0.07)",
+    // "rgba(79,236,236,0.07)"
+  ],
+  // bracketPair
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  // اضافة اقواس الكيرلي
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#0db14c",
+    "editorBracketHighlight.foreground2": "#d9245f",
+    "editorBracketHighlight.foreground3": "#00aeff",
+    "editorBracketHighlight.foreground4": "#ff8800",
+    "editorBracketHighlight.foreground5": "#9c27b0",
+    "editorBracketHighlight.foreground6": "#ff0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#f00"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
+}

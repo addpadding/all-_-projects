@@ -1,0 +1,31 @@
+@function mmm_00($num) {
+    @return $num * 10;
+}
+
+@function sss_00($num) {
+    @return #{$num * $num}+px;
+}
+
+.box {
+    width: mmm_00(10px);
+}
+
+.box {
+    font-size: sss_00(10);
+}
+
+// ==================
+
+@function sum_00($numbr_s...) {
+    $sum: 0;
+
+    @each $numbr_s in $numbr_s {
+        $sum: $sum +$numbr_s
+    }
+
+    @return $sum;
+}
+
+.sum {
+    width: sum_00(40px, 50px, 20px);
+}

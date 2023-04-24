@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> 17  -->
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+        <label> Search for programming languages:</label>
+        <input type="text" v-model="findLanguages">
+
+        <ul>
+            <li v-for="lang in filterlanguages">
+                {{ lang }}
+
+            </li>
+        </ul>
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+                age: 36,
+                message: 'Elzero wen school',
+                fristName: 'Osama',
+                lastName: 'mohammed',
+                findLanguages: '',
+                languages: [
+                    'Html',
+                    'css',
+                    'sass',
+                    'js',
+                    'php',
+                    'mySql',
+                    'c#',
+                ],
+            },
+            methods: {
+
+            },
+            computed: {
+                filterlanguages: function () {
+                    var filtering = new RegExp(this.findLanguages, 'i');
+                    return this.languages.filter(function (el) {
+                        return el.match(filtering);
+                    })
+                    return this.languages.filter(el => el.match(filtering));
+                }
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> 19  -->
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+
+        <label>egypt pound</label>
+        <input type="text" v-model="eg">
+        <label>saudi Riyal</label>
+        <input type="text" v-model="sar">
+
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+                eg: 0,
+                sar: 0,
+            },
+            methods: {
+
+            },
+            computed: {
+
+            },
+            watch: {
+                eg: function (v) {
+                    this.sar = v / 5;
+                    console.log('eg Run');
+                },
+
+                sar: function (v) {
+                    this.eg = v * 5;
+                    console.log('sar Run');
+
+                }
+
+            },
+        })
+    </script>
+</body>
+</html>

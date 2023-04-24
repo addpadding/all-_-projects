@@ -1,0 +1,7 @@
+$size_s: 40px, 60px, 80px;
+
+@each $size in $size_s {
+    .class-#{$size} {
+        font-size: $size;
+    }
+}

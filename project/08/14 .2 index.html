@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> 13  -->
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+        <app-article v-for="post in posts" :title="post.title" :author="post.author"></app-article>
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+        Vue.component('app-article', {
+            data: function () {
+                return {
+                    name: 'osama',
+                    count: 0
+                }
+            },
+            props: ['author', 'title'],
+            template: '<p>Article title is {{ title }} and by {{ author }} </p>'
+        })
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+                posts: [
+                    {id: 1, author: 'Osama', title: 'Article Number One'},
+                    {id: 1, author: 'Ahmes', title: 'Article Number two'},
+                    {id: 1, author: 'Sayed', title: 'Article Number Three'},
+                    {id: 1, author: 'Sameh', title: 'Article Number Four'},
+                    {id: 55, author: '55', title: 'Article Number 55'}
+                ]
+            },
+        })
+    </script>
+</body>
+</html>

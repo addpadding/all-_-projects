@@ -1,0 +1,141 @@
+{
+    "items_json": [
+        {
+            "sys_json": {
+                "id_json": "1"
+            },
+
+            "fields_json": {
+                "title_json": "queen panel bed",
+                "price_json": 10.99,
+
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-1.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "2"
+            },
+            "fields_json": {
+                "title_json": "king panel bed",
+                "price_json": 12.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-2.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "3"
+            },
+            "fields_json": {
+                "title_json": "single panel bed",
+                "price_json": 12.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-3.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "4"
+            },
+            "fields_json": {
+                "title_json": "twin panel bed",
+                "price_json": 22.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-4.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "5"
+            },
+            "fields_json": {
+                "title_json": "fridge",
+                "price_json": 88.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-5.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "6"
+            },
+            "fields_json": {
+                "title_json": "dresser",
+                "price_json": 32.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-6.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "7"
+            },
+            "fields_json": {
+                "title_json": "couch",
+                "price_json": 45.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-7.jpeg"
+                        }
+                    }
+                }
+            }
+        },
+
+        {
+            "sys_json": {
+                "id_json": "8"
+            },
+            "fields_json": {
+                "title_json": "table",
+                "price_json": 33.99,
+                "image_json": {
+                    "fields_json": {
+                        "file_json": {
+                            "url_json": "./images/product-8.jpeg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

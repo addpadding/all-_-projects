@@ -1,0 +1,106 @@
+// 001._________(feature)__()
+.feature {
+    background-color: $color--105--lightGrayishBlue;
+    // ==================
+    text-align: center;
+    // ==================
+
+    @include media_up(medium) {
+        text-align: left;
+        // ==================
+    }
+
+    // 002._________(container)__()
+    .container {
+        // ==================
+
+        // 003._________(feature__intro)__()
+        .feature__intro {
+            margin-bottom: 3.75rem;
+            // ==================
+
+            // media.__________()
+            @include media_up(large) {
+                width: 60%;
+                // ==================
+            }
+        }
+
+        // 003._________(feature__grid)__()
+        .feature__grid {
+            // ==================
+
+            @include media_up(medium) {
+                display: flex;
+                flex-wrap: wrap;
+                // ==================
+            }
+
+            // 004._________(feature__item)__()
+            .feature__item {
+                padding: 0.9375rem;
+                // ==================
+
+                @include media_up(medium) {
+                    flex: 1 0 50%;
+                    // ==================
+                }
+
+                @include media_up(large) {
+                    flex: 1;
+                    // ==================
+                }
+
+                // 005._________(feature__icon)__()
+                .feature__icon {
+                    margin-bottom: 1.875rem;
+                    // ==================
+
+                    @include media_up(large) {
+                        margin-bottom: 2.75rem;
+                        // ==================
+                    }
+                }
+
+                // 005._________(feature__title)__()
+                .feature__title {
+                    margin-bottom: 1rem;
+                    // ==================
+                    color: $color--101--darkBlue;
+                    // ==================
+                    font-size: 1.25rem;
+                    font-weight: 300;
+                    line-height: 1.15;
+                    // ==================
+
+                    @include media_up(large) {
+                        margin-bottom: 1.5rem;
+                        // ==================
+                        font-size: 1.5rem;
+                        // ==================
+                    }
+                }
+
+                // 005._________(feature__description)__()
+                .feature__description {
+                    font-size: 0.875rem;
+                    line-height: 1.5;
+                    // ==================
+                }
+            }
+
+        }
+
+    }
+}
+
+.aa {
+    color: #ff880023;
+}
+
+// "#0db14c",
+// "#d9245f",
+// "#00aeff",
+// "#ff8800",
+// "#9c27b0",
+// "#ff0",

@@ -1,0 +1,192 @@
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (01) ================== */
+// 001._________(header)
+.header {
+    position: relative;
+    z-index: 1;
+    // ==================
+
+    // js
+    &.open {
+        // ((header) => (click("open")))
+        // ==================
+
+        .header__toggle_hamburger {
+            // ==================
+
+            >span:first-child {
+                transform: rotate(45deg);
+                // ==================
+            }
+
+            >span:nth-child(2) {
+                opacity: 0;
+                // ==================
+            }
+
+            >span:last-child {
+                transform: rotate(-45deg);
+                // ==================
+            }
+
+        }
+    }
+
+    // 002._________(overlay)__()
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // ==================
+        background-image: linear-gradient($color--101--darkBlue, transparent);
+        // ==================
+        opacity: 0;
+        // ==================
+    }
+
+    // 002._________(container)__()
+    .container {
+        position: relative;
+        // ==================
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
+        // ==================
+        background-color: $color--107--white;
+        // ==================
+
+
+        // 003._________(header__logo)__()
+        .header__logo {
+            // ==================
+
+            // 004._________(img)__()
+            img {
+                width: 8.8125rem;
+                height: 1.375rem;
+                // ==================
+            }
+        }
+
+        // 003._________(header__hamburger)__()
+        .header__toggle_hamburger {
+            // ==================
+
+            // 004._________(aaa)__()
+            >span {
+                display: block;
+                width: 26px;
+                height: 2px;
+
+                background-color: $color--101--darkBlue;
+
+                transition: all 300ms ease-in-out;
+                transform-origin: 3px 1px;
+                // ==================
+
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        // 003._________(header__links)__()
+        .header__links {
+            // ==================
+
+            // 004._________(A)__()
+            a {
+                font-size: $font--91--sm;
+                color: $color--104--grayishBlue;
+
+                transition: color 300ms ease-in-out;
+                position: relative;
+                // ==================
+
+                &:not(:last-child) {
+                    margin-right: 32px;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -30px;
+
+                    display: block;
+                    height: 5px;
+
+                    background: linear-gradient(to right, $color--102--limeGreen, $color--103--brightCyan);
+
+                    opacity: 0;
+                    transition: opacity 300ms ease-in-out;
+                }
+
+                // 00*._________(hover)__()
+                &:hover {
+                    color: $color--101--darkBlue;
+                    // ==================
+
+                    &::before {
+                        opacity: 1;
+                        // ==================
+                    }
+                }
+            }
+        }
+
+    }
+
+    // 002._________(overlay)__()
+    .header__menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        // ==================
+        width: calc(100% - 3rem);
+        // ==================
+        padding: 1.625rem;
+        margin-top: 1.5rem;
+        // ==================
+        background-color: $color--107--white;
+        // ==================
+        border-radius: 5px;
+        // ==================
+
+        // 003._________(A)__()
+        a {
+            display: block;
+            padding: 0.625rem;
+            // ==================
+            color: $color--101--darkBlue;
+            color: #f00;
+            color: #f00;
+            // ==================
+            text-align: center;
+            // ==================
+        }
+    }
+
+}

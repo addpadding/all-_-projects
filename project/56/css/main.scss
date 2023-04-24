@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap");
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (global) ================== */
+
+$mainColor: #ffc527;
+
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: "Tajawal", sans-serif;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section__title {
+    position: relative;
+    display: inline-block;
+
+    //after ==================
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        width: 120px;
+        height: 5px;
+        background-color: $mainColor;
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (header) ================== */
+// 001.==================
+nav {
+
+    //* ==================
+    &.navbar {
+        box-shadow: 1px 2px 5px #ebebeb;
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (hom) ================== */
+// 001.==================
+.home {
+    height: 600px;
+    background-image: url(../images/slide-bg-1.jpg);
+    background-size: cover;
+    padding: 1px;
+
+    // media.==================
+    @media (max-width: 768px) {
+        height: 400px;
+    }
+
+    // 002.==================
+    .container {
+
+        // 003.==================
+        .home-item {
+            width: 50%;
+            margin-right: auto;
+            margin-top: 15%;
+
+            // media.==================
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+
+            // 004.==================
+            h2 {
+                color: #fff;
+                font-size: 45px;
+            }
+
+            // 004.==================
+            p {
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (about) ================== */
+// 001.==================
+.about {
+
+    // 002.==================
+    .container {
+
+        // 003.==================
+        .about__item {
+
+            // 004.==================
+            p {
+                margin: 50px 0;
+            }
+
+            // 004.==================
+            button {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (news) ================== */
+// 001.==================
+.news {
+
+    // 002.==================
+    .container {
+
+        // 003.==================
+        .row {
+
+            // 004.==================
+            div {
+
+                // 005.==================
+                .news__left {
+                    display: flex;
+                    align-items: center;
+
+                    // 006.==================
+                    img {
+                        max-width: 200px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (subscribe) ================== */
+// 001.==================
+.subscribe {
+    height: 450px;
+    background-image: url(../images/subscribe-our-newsletter-bg.jpg);
+    background-size: cover;
+    padding: 1px;
+    position: relative;
+
+    // 002.==================
+    .item {
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+
+        // media.==================
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+
+        // 003.==================
+        h2 {
+            font-size: 40px;
+        }
+
+        // 003.==================
+        .form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            // media.==================
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            // 004.==================
+            input {
+                width: 80%;
+
+                // media.==================
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            button {
+                width: 15%;
+
+                // media.==================
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (footer) ================== */
+// 001.==================
+.footer {
+    background-color: #071c33;
+    color: #fff;
+
+    // 002.==================
+    .container {
+
+        // 003.==================
+        .row {
+
+            // 004.==================
+            div {
+
+                // 005.==================
+                .item {
+
+                    // 006.==================
+                    h3 {
+                        background-color: #fff;
+                        display: inline-block;
+                        margin: 0 0 10px;
+                        padding: 10px 20px;
+                    }
+                }
+
+                // 005.==================
+                .footer__left {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+
+                    // 006.==================
+                    img {
+                        width: 50px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (jumbotron) ================== */
+// 001.==================
+.jumbotron {
+
+    // 002.==================
+    .container {
+
+        // 003.==================
+        .row {
+
+            // 004.==================
+            div {
+
+                // 005.==================
+                .item {}
+
+                // 005.==================
+                nav {
+
+                    // 006.==================
+                    .breadcrumb {
+                        margin: 0;
+                        justify-content: flex-end;
+
+                        // 007.==================
+                        .breadcrumb-item {
+
+                            // *.==================
+                            &::before {
+                                float: right;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/*
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+=
+================== (blog) ================== */
+// 001.==================
+.blog {
+
+    // 002.==================
+    .container {
+
+        // 003.==================
+        .row {
+
+            // 004.==================
+            div {
+
+                // 005.==================
+                .jumbotron {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 2px solid $mainColor;
+
+                    // 006.==================
+                    .blog-desc {
+                        width: 55%;
+
+                        // 007.==================
+                        h4 {
+                            font-size: 18px;
+                        }
+                    }
+
+                    // 006.==================
+                    .blog-img {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+    }
+}

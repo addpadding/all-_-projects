@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+
+        <ul>
+            <li v-for="skill in skills">
+                {{ skill }}
+            </li>
+        </ul>
+
+        <ul>
+            <li v-for="(skill, index) in skills">
+                {{index}} => {{ skill }}
+            </li>
+        </ul>
+
+        <ul>
+            <li v-for="(test, index) in completedTests">
+                {{index}} => {{ test.testName }} | {{ test.testResult }}
+            </li>
+        </ul>
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+                name: 'Osama',
+                age: 36,
+                skills: ['html', 'css', 'js', 'Veu.js'],
+                isSubscribed: false,
+                completedTests: [
+                    {
+                    testName: 'Test Number One',
+                    testResult: '80%'
+                    },
+
+                    {
+                    testName: 'Test Number Two',
+                    testResult: '70%'
+                    },
+
+                    {
+                    testName: 'Test Number Three',
+                    testResult: '90%'
+                    },
+                ]
+            },
+        })
+    </script>
+</body>
+</html>

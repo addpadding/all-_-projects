@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="elzero-app" class="container" :style="{'--mainColor': color}">
+        <ul class="switch-colors">
+            <li data-color="#b71540" @click="updateColor"></li>
+            <li data-color="#0c2461" @click="updateColor"></li>
+            <li data-color="#3c6382" @click="updateColor"></li>
+            <li data-color="#079992" @click="updateColor"></li>
+            <li data-color="#e58e26" @click="updateColor"></li>
+        </ul>
+
+        <div class="changes">
+            <div>change</div>
+            <div>change</div>
+            <div>change</div>
+            <div>change</div>
+        </div>
+    </div>
+    <!-- ============================================================ -->
+    <script src="js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+                color: "#b71540",
+            },
+            methods: {
+                updateColor: function (event) {
+                    this.color = event.target.getAttribute("data-color");
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

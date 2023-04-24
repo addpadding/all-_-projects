@@ -1,0 +1,110 @@
+include includes/myvar.pug
+include includes/mixin.pug
+
+html(lang='en')
+
+    head 
+
+        meta(charset='utf-8')
+        meta(name="description" content="content")
+        
+        block pageTitle
+            title my Resume
+        include includes/style.pug
+
+    body
+        block pageInfo
+            main Main Page Content
+        //================== 018
+        block pageContent
+
+
+            div(class="main-container", id="main")
+                    // ============= 017 ===========
+                    +featura('cheap price')
+                    +featura('fast')
+                    +featura('clean code')
+                    //- ============= 017 ===========
+
+                    h2(class="main-title") my skills
+
+                    ul(class="skill-list")
+                        // =========== 014 ===========
+                        li php  #{themeName.toUpperCase()}
+                        li mysql !{themeTag}
+                        li sass #{'}'}
+                        li pugJs \#{Test}
+                        li pugJs #{'#{osama}'}
+                        // =========== 016 ===========
+                    +skillList
+
+                    // this is fot loop
+                    ul 
+                        - for (var x = 0; x <= 10; x++)
+                            li item 
+
+                    // this is while loop
+                    - var z = 0
+                    ul 
+                        while z < 10
+                            li= z++ 
+
+                    // =====================013================
+
+                    // this is Each Loop
+                    - var myArray = ['HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript']
+                    each val, index in myArray
+                        div= index + ' : ' + val
+                    else 
+                        div there no value
+
+                    div(class="parent") Parent Div
+                        div(class="child" + className) child Div 
+                    p#main i love <b> pugjs</b> and <b>sass</b>
+
+                    // ==================== 015 ===============
+
+                    p.inter interpolatuons Test #[b(class='pug', id="test") Test] and
+
+                    p.main
+                        | I love 
+                        b  pugjs
+                        |  and 
+                        b sass
+                    |
+                    |
+                    .
+                        this is text
+
+            form
+                h2.contact-title Contact Me
+
+                input(
+                    class="f-c",
+                    type="text",
+                    name="user",
+                    style={"background-color": "red", 'color': "white"}
+                )
+
+                input(
+                    class="f-c",
+                    type="email",
+                    name="email"
+                )
+
+                input(
+                    class="f-c",
+                    type="text",
+                    name="subject"
+                )
+                button Send 
+                button Reset 
+
+        // ================ 020
+        - var friends = 8
+        case friends 
+            when 0: p you have no friends
+            when 1: p you have one friends
+            default: p you have #{friends} friends
+        include includes/script.pug
+

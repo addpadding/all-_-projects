@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #2196f3;
+$main-color-alt: #1787e0;
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background-color: #ececec;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Small */
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+
+    /* Medium */
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+
+    /* Large */
+    @media (min-width: 1200px) {
+        width: 1170px;
+    }
+}
+
+section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+    background-color: #ececec;
+    border-bottom: 1px solid #000;
+}
+
+
+// 001
+.our_skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #fff;
+
+    // 002
+    .main_title {
+        text-transform: uppercase;
+        margin: 0 auto 80px;
+        border: 2px solid black;
+        padding: 10px 20px;
+        font-size: 30px;
+        width: fit-content;
+        position: relative;
+        z-index: 1;
+        transition: 0.3s;
+    }
+
+    // 002
+    .container {
+        display: flex;
+        align-items: center;
+
+        // 003
+        img {
+            @media (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        // 003
+        .skill_s {
+            flex: 1;
+
+            // 004
+            .skill {
+
+                // 005
+                h3 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+
+                    // 006
+                    span {
+                        font-size: 12px;
+                        border: 1px solid #ccc;
+                        padding: 3px 5px;
+                        border-radius: 4px;
+                        color: $main-color;
+                    }
+                }
+
+                // 005
+                .the_progress {
+                    height: 30px;
+                    background-color: #eee;
+                    position: relative;
+
+                    // 006
+                    span {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        background-color: $main-color;
+                        transition: width 0.5s linear
+                    }
+                }
+            }
+        }
+
+    }
+}

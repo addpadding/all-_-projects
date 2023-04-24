@@ -1,0 +1,58 @@
+.has_fade {
+    visibility: hidden;
+}
+
+@keyframes fade_in {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        // ==================
+    }
+
+    1% {
+        visibility: visible;
+        opacity: 0;
+        // ==================
+    }
+
+    to {
+        visibility: visible;
+        opacity: 1;
+        // ==================
+    }
+}
+
+
+// js
+.fade_in {
+    // ((overlay)=> (click("fade_in"))) 
+    animation: fade_in 200ms ease-in-out forwards;
+    // ==================
+}
+
+@keyframes fade_out {
+    from {
+        visibility: visible;
+        opacity: 0;
+        // ==================
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 0;
+        // ==================
+    }
+
+    to {
+        visibility: hidden;
+        opacity: 1;
+        // ==================
+    }
+}
+
+// js
+.fade_out {
+    // ((overlay)=>(click("fade_out")))
+    animation: fade_out 200ms ease-in-out forwards;
+    // ==================
+}

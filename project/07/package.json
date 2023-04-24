@@ -1,0 +1,25 @@
+{
+  "name": "jest_testing",
+  "version": "1.0.0",
+  "description": "For Unit Testing Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "elzero",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "jest": {
+    "//1": "Collect Coverage Option",
+    "collectCoverage": true,
+    "CoverageReporters": [
+      "html"
+    ],
+    "//2": "Coverage Directory",
+    "coverageDirectory": "reports",
+    "collectCoverageFrom": ["**/*.{js,jsx,ts}"],
+    "coveragePathIgnorePatterns": ["/node_modules/", "/build/"]
+  }
+}

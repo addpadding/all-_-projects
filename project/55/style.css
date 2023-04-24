@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+    height: 3000px;
+}
+
+header {
+    height: 60px;
+    background-color: #f6f6f6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.3s;
+}
+
+.changeHeader {
+    height: 50px;
+    background-color: green;
+    box-shadow: 2px 5px 5px #000;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li a {
+    display: block;
+    margin: 5px;
+    background-color: #f50;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header ul li a.active {
+    background-color: #080;
+}
+
+section {
+    min-height: 400px;
+    /* display: none; */
+}
+
+section.home {
+    /* display: block; */
+    background-color: coral;
+}
+
+section.about {
+    background-color: cornflowerblue;
+}
+
+section.portfolio {
+    background-color: darkorange;
+}
+
+section.contact {
+    background-color: darkorchid;
+}
+
+.portfolio img {
+    width: 250px;
+    height: 250px;
+}
+
+textarea {
+    display: block;
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px;
+    display: none;
+}

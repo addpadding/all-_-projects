@@ -1,0 +1,1 @@
+function name(e){return x=1}document.getElementById("one").innerHTML="Text one from javaScript",document.getElementById("tow").innerHTML="Text tow from javaScript";

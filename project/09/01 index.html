@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="elzero-app" class="container">
+        <div class="product">
+            <h3>product title </h3>
+            <p>product descriptions</p>
+            <span class="price">price: ${{ price }} </span>
+            <span class="amount-title">amount: </span>
+            <input type="range" min="1" max="20" step="1" v-model="amount" />
+            <div class="total-price">
+                <span class="amount">amount</span>
+                <span class="total">Total ${{ totalPrice }} </span>
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+                amount: 1,
+                price: 50
+            },
+            computed: {
+                totalPrice: function () {
+                    return this.amount * this.price;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+// 001._________(articles)__()
+.articles {
+    background-color: $color--106--veryLightGray;
+    // ==================
+
+    // 002._________(container)__()
+    .article__content {
+        // ==================
+
+        // 003._________(article__grid)__()
+        .article__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.875rem;
+            // ==================
+
+            // ==================
+            // حل بطريقة اخرى
+            // grid-template-columns: repeat(auto-fit, minmax(14.375rem, 1fr));
+            // ==================
+
+            // media._________()
+            @include media_up(medium) {
+                grid-template-columns: repeat(2, 1fr);
+                // ==================
+            }
+
+            // media._________()
+            @include media_up(large) {
+                grid-template-columns: repeat(4, 1fr);
+                // ==================
+            }
+
+            // 004._________(article__item)__()
+            .article__item {
+                background-color: $color--107--white;
+                // ==================
+                border-radius: 0.3125rem;
+                box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+                // ==================
+                overflow: hidden;
+                transition: all 150ms ease-in-out;
+                // ==================
+
+                // hover._________()
+                &:hover {
+                    transform: scale(1.05);
+                    // ==================
+                }
+
+                // ==================
+                &:nth-child(1) .article__image {
+                    background-image: url(../images/image-currency.jpg);
+                    // ==================
+                }
+
+                // ==================
+                &:nth-child(2) .article__image {
+                    background-image: url(../images/image-restaurant.jpg);
+                    // ==================
+                }
+
+                // ==================
+                &:nth-child(3) .article__image {
+                    background-image: url(../images/image-plane.jpg);
+                    // ==================
+                }
+
+                // ==================
+                &:nth-child(4) .article__image {
+                    background-image: url(../images/image-confetti.jpg);
+                    // ==================
+                }
+
+                // 005._________(article__image)__()
+                .article__image {
+                    height: 12.5rem;
+                    // ==================
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    // ==================
+                }
+
+                // 005._________(article__text)__()
+                .article__text {
+                    padding: 1.875rem 1.875rem 2.5rem 1.875rem;
+                    // ==================
+                    color: $color--104--grayishBlue;
+                    // ==================
+
+                    // media._________()
+                    @include media_up(medium) {
+                        padding: 1.875rem1.5625rem;
+                        // ==================
+                    }
+
+                    // 006._________(article__author)__()
+                    .article__author {
+                        margin-bottom: 0.75rem;
+                        // ==================
+                        font-size: 0.625rem;
+                        // ==================
+                    }
+
+                    // 006._________(article__title)__()
+                    .article__title {
+                        margin-bottom: 0.5rem;
+                        // ==================
+                        color: $color--101--darkBlue;
+                        // ==================
+                        font-size: 1.0625rem;
+                        line-height: 1.2;
+                        // ==================
+                    }
+
+                    // 006._________(article__description)__()
+                    .article__description {
+                        font-size: 0.8125rem;
+                        // ==================
+                    }
+                }
+            }
+        }
+
+    }
+}

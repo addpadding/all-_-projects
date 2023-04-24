@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>00</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- ==================== -->
+
+
+
+    <div class="curd">
+
+        <!-- ==================== #01-->
+        <div class="head">
+
+            <h2>curd</h2>
+
+            <p>product management system</p>
+
+        </div>
+
+        <!-- ==================== #02-->
+        <div class="inputs">
+
+            <!-- 11 -->
+            <input type="text" id="title_input" placeholder="title">
+
+            <!-- 22 -->
+            <div class="price">
+
+                <input onkeyup="get_Total_70()" type="number" id="price_input" placeholder="price">
+                <input onkeyup="get_Total_70()" type="number" id="taxes_input" placeholder="taxes">
+                <input onkeyup="get_Total_70()" type="number" id="ads_input" placeholder="ads">
+                <input onkeyup="get_Total_70()" type="number" id="discount_input" placeholder="discount">
+
+                <small id="total"></small>
+
+            </div>
+
+            <!-- 33 -->
+            <input type="number" id="count_input" placeholder="count">
+
+            <!-- 44 -->
+            <input type="text" id="category_input" placeholder="category">
+
+            <!-- 55 -->
+            <button id="submit_button">creat</button>
+
+        </div>
+
+        <!-- ==================== #03-->
+        <div class="outputs">
+
+            <!-- 11 -->
+            <div class="search_Block">
+
+                <!-- 11 = 10 -->
+                <input onkeyup="search_Data_79(this.value)" type="text" id="search" placeholder="search">
+
+                <!-- 11 = 20 -->
+                <div class="Btn_Search">
+
+                    <button onclick="get_search_79(this.id)" id="search_title">Search By Title</button>
+
+                    <button onclick="get_search_79(this.id)" id="search_category">Search By Category</button>
+
+                </div>
+
+            </div>
+
+            <!-- == -->
+            <div id="deleteAll"></div>
+
+            <!-- 22 -->
+            <table>
+
+                <!-- 22 = 10 -->
+                <tr>
+
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+
+                </tr>
+
+                <!-- 22 = 20 -->
+                <tbody id="tbody">
+
+                    <!-- <tr>
+
+                        <td>1</td>
+                        <td>samsong</td>
+                        <td>2000</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>100</td>
+                        <td>2100</td>
+                        <td>phone</td>
+
+                        <td><button id="update">update</button></td>
+                        <td><button id="delete">delete</button></td>
+
+                    </tr> -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- ==================== -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

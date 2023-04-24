@@ -1,0 +1,101 @@
+/* ========================portfolio */
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #9e9e9e47;
+    text-align: center;
+}
+
+.portfolio .special_heading+p {
+    margin-bottom: 20px;
+}
+
+.portfolio_content {
+    margin: auto;
+    height: 538px;
+    width: 750px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.portfolio .portfolio_content .images {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio .portfolio_content .images .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.portfolio .portfolio_content .images .card img {
+    width: 105%;
+}
+
+.portfolio .portfolio_content .images .card .info {
+    width: 70%;
+    position: absolute;
+    color: #000;
+    top: 22px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.portfolio .portfolio_content .images .card .info h3 {
+    margin: 10px;
+}
+
+.portfolio .portfolio_content .images .card .info p {
+    margin: 0 auto 5px;
+    max-width: 60%;
+    text-align: center;
+}
+
+/* ============= */
+
+.portfolio_content .btm_sliders {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.portfolio_content .btm_sliders span {
+    height: 15px;
+    width: 50px;
+    border: 2px solid #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.portfolio_content .btm_sliders span:hover {
+    background-color: #fff;
+}
+
+.portfolio_content .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.portfolio_content .slide:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio_content span {
+    font-size: 35px;
+    color: #FFF;
+    line-height: 41px;
+}
+
+.portfolio_content .right {
+    right: 0;
+}

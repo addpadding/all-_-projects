@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="elzero-app" class="container" :style="{'--mainColor': color}">
+        <!-- ============================================================ -->
+        <form action="">
+            <input type="text" placeholder="Type your post title" v-model="">
+            <button @click.prevent="ConvertToSlug">Convert to slug</button>
+        </form>
+        <div class="slug-result">
+            https://elzero.org/ <span> {{ output }} </span>
+        </div>
+        <!-- ============================================================ -->
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            data: {
+                input: "",
+                output: "",
+            },
+            methods: {
+                ConvertToSlug() {
+
+                    // cache the variable
+                    var theSlug = this.input;
+
+                    // [1] convert to lowerCase
+                    theSlug = theSlug.toLowerCase();
+
+                    // Add the result to outout
+                    this.output = theSlug
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

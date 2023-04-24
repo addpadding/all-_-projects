@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", "sans-serif";
+  font-size: 18px;
+}
+
+.container {
+  text-align: center;
+}
+/* ============================== */
+
+.container form {
+  margin: 20px auto;
+  width: 400px;
+}
+
+.container form input {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 46px;
+  padding: 10px;
+}
+.container form button {
+  width: 100%;
+  display: block;
+  padding: 15px 10px;
+  background-color: #2196f3;
+  color: #fff;
+  border-color: transparent;
+  cursor: pointer;
+}
+.container form button:disabled {
+  opacity: 0.4;
+  cursor: no-drop;
+}

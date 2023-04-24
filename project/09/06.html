@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div id="elzero-app" class="container">
+        <!-- ============================================== -->
+        <form action="send.html" methods="post" @submit="ValidetForm">
+            <div class="errors-list">
+                <div class="error" v-for="error in formErrors">{{ error }}</div>
+            </div>
+
+            <div class="form-group">
+                <label for="">Username</label>
+                <input type="text" name="username" class="form-input" v-model="username" />
+            </div>
+
+            <div class="form-group">
+                <label for="">Subject</label>
+                <input type="text" name="subject" class="form-input" v-model="subject" />
+            </div>
+
+            <div class="form-group">
+                <label for="">Message</label>
+                <textarea name="message" class="form-input" v-model="message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="send-button" value="send" />
+            </div>
+        </form>
+        <!-- ============================================== -->
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            //==========================
+            data: {
+                formErrors: [],
+                username: null,
+                subject: null,
+                message: null,
+                maxChars: 10
+            },
+            methods: {
+                ValidetForm: function (e) {
+                    this.formErrors = []; //empty errors to start fresh
+
+                    // [1] check if username is empty
+                    if (!this.username) {
+                        this.formErrors.push("username cant be empty");
+                    }
+
+                    // [2] check if subject is empty
+                    if (!this.subject) {
+                        this.formErrors.push("subject cant be empty");
+                    }
+
+                    // [3] check if message is empty
+                    if (!this.message) {
+                        this.formErrors.push("message cant be empty");
+                    }
+
+                    // [4] check if username characters count
+                    if (this.username && this.username.length > this.maxChars) {
+                        this.formErrors.push(
+                            `username cant be more than ${this.maxChars} characters`
+                        );
+                    }
+
+                    // if no errors return true
+                    // if (!this.formErrors.length) {
+                    //     return true;
+                    // }
+
+                    e.preventDefault();
+                },
+            },
+            //==========================
+        });
+    </script>
+</body>
+
+</html>

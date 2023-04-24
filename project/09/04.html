@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div id="elzero-app" class="container" :style="{'--mainColor': color}">
+        <!-- ============================================== -->
+        <form action="">
+            <input :type="fieldType" placeholder="Type Your Password">
+            <button @click.prevent="switchField">Show/Hide password</button>
+        </form>
+        <!-- ============================================== -->
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#elzero-app",
+            //==========================
+            data: {
+                fieldType: "password",
+            },
+            methods: {
+                switchField() {
+                    this.fieldType = this.fieldType === "password" ? "text" : "password";
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

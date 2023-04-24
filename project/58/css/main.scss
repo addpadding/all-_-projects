@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo_container {
+    width: 600px;
+    margin: 30px auto 0;
+    background-color: #f6f6f6;
+
+    // 002
+    .add_task {
+        padding: 15px;
+        background-color: #009688;
+        position: relative;
+
+        // 003
+        input {
+            display: inline-block;
+            padding: 10px 15px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            width: calc(100% - 15px);
+            color: #fff;
+            font-size: 20px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        // 003
+        .plus_button {
+            position: absolute;
+            height: 43px;
+            width: 43px;
+            line-height: 43px;
+            background-color: #fff;
+            right: 12px;
+            border-radius: 50%;
+            text-align: center;
+            color: #009688;
+            cursor: pointer;
+            font-size: 38px;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    // 002
+    .content_box {
+        padding: 15px;
+
+        &>span {
+            display: block;
+            background-color: #fff;
+            padding: 10px;
+        }
+
+        &>span:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        // 003
+        .no_message {
+            color: #777;
+            font-size: 15px;
+        }
+
+        // 003
+        .span_box {
+
+            // 004
+            .span_delete {
+                float: right;
+                background-color: #e91e63;
+                padding: 4px 10px;
+                color: #fff;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            // 004
+            &.finished {
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+.stats {
+    overflow: hidden;
+    margin: 10px auto;
+    width: 600px;
+    font-size: 12px;
+
+    // 002
+    .count {
+        width: 50%;
+        float: left;
+        padding: 10px;
+
+        // 003
+        span {
+            background-color: #e91e63;
+            color: #fff;
+            padding: 1px 5px;
+            font-size: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    }
+
+    // 002
+    .completed {
+        width: 50%;
+        float: right;
+        padding: 10px;
+        text-align: right;
+
+        // 003
+        span {
+            background-color: #03e9f4;
+            color: #fff;
+            padding: 1px 5px;
+            font-size: 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,171 @@
+@use "./sass/layout/global-rules";
+@use "./sass/pages/contact";
+@use "./sass/variables/colors";
+.header {
+  color: green;
+}
+
+.footer {
+  background-color: black;
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    padding: 20px;
+  }
+}
+
+.parent {
+  font-weight: bold;
+}
+
+.parent .child {
+  font-size: 20px;
+}
+
+.parent .child .grand-child {
+  font-size: 15px;
+}
+
+.parent-one,
+.parent-two {
+  padding: 20px;
+}
+
+.parent-one .child,
+.parent-two .child {
+  padding: 10px;
+}
+
+.parent > .child {
+  font-size: 20px;
+}
+
+.parent > .test {
+  font-weight: bold;
+}
+
+.parent > .element-one {
+  font-size: 10px;
+}
+
+.parent > .element-two {
+  font-size: 10px;
+}
+
+.parent .not-direct-child {
+  font-weight: bold;
+}
+
+.box .title {
+  font-size: 10px;
+}
+
+.box .description {
+  font-size: 8px;
+}
+
+.box.red {
+  color: red;
+}
+
+.box.green {
+  color: green;
+}
+
+.box:hover {
+  background-color: #eee;
+}
+
+.box:hover .title {
+  font-weight: bold;
+}
+
+:not(.box) {
+  font-weight: normal;
+}
+
+[dir="rtl"] .box {
+  direction: rtl;
+}
+
+.box {
+  font-size: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ads,
+.article,
+.box,
+.arrow-div {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
+
+.ads {
+  font-size: 20px;
+  color: red;
+}
+
+.article {
+  font-size: 22px;
+  color: green;
+}
+
+.page {
+  background-color: white;
+  color: #444;
+}
+
+.arrow-div {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+}
+
+.arrow-div::before {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  left: -40px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-right-color: red;
+}
+
+.ad-elzero-u74541235 {
+  font-size: 20px;
+  background-image: url("imgs/elzero.png");
+  left: 0;
+}
+
+.ad-u34093595 {
+  font-weight: bold;
+}
+
+/* This Comment Will Show In CSS File But Not In Compressed Mode */
+/*! This Comment Will Show In CSS File And In Compressed Mode */
+.box {
+  font-size: 20px;
+}
+
+/* This Comment Contains Interpolation => elzero */
+/*# sourceMappingURL=main.css.map */

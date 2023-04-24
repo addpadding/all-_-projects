@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Vue.js</title>
+</head>
+<body>
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>> 15  -->
+    <div id="elzero-app">
+        <h1>Welcom To Vue.js Course </h1>
+        <app-article></app-article>
+        <app-article-Item></app-article-Item>
+
+    </div>
+    
+    <script src="js/vue.js"></script>
+    <script>
+
+        var AppArticle = {
+            data: function () {
+                return {
+                    count: 0
+                }
+            },
+            template: '<p>Test</p>'
+        }
+
+        var AppArticleItem = {
+            data: function () {
+                return {
+                    count: 0
+                }
+            },
+            template: '<p>Item</p>'
+        }
+
+
+
+        var vm = new Vue({
+            el: '#elzero-app',
+            data: {
+
+            },
+            components: {
+                'app-article': AppArticle,
+                'app-article-item': AppArticleItem
+            }
+        })
+    </script>
+</body>
+</html>
